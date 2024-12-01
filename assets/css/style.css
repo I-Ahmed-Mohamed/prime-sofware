@@ -411,6 +411,13 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
+.back{
+  background-color: #149ddd;
+  color: #0e2442;
+  border-radius: 50px;
+  
+
+}
 .skills .progress {
   height: 60px;
   display: block;
