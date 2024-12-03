@@ -23,9 +23,9 @@
   <head>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
-      (function() {
-        emailjs.init("gkIpVYT3CHg7ZgDjn");  // استبدل بـ User ID بتاعك من EmailJS
-      })();
+        (function() {
+            emailjs.init("gkIpVYT3CHg7ZgDjn");
+        })();
     </script>
   </head>
 <body>
@@ -179,47 +179,6 @@
     <!--! ======= backend Contact ===================================================================== -->
 
 
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script type="text/javascript">
-  (function() {
-    emailjs.init("gkIpVYT3CHg7ZgDjn");  // استبدل بـ User ID بتاعك من EmailJS
-  })();
-
-  const btn = document.getElementById('button');
-  const responseMessage = document.getElementById('response-message');
-  const errorMessage = document.getElementById('error-message');
-  const successIcon = document.getElementById('success-icon');
-  const loadingMessage = document.querySelector('.loading');
-
-  document.getElementById('form').addEventListener('submit', function(event) {
-    event.preventDefault();  // لمنع تحميل الصفحة
-
-    btn.textContent = 'Sending...';
-    loadingMessage.style.display = 'block';  // إظهار الـ "loading"
-    responseMessage.style.display = 'none';  // إخفاء رسالة النجاح
-    errorMessage.style.display = 'none';    // إخفاء رسالة الخطأ
-    successIcon.style.display = 'none';     // إخفاء علامة الصح
-
-    const serviceID = 'default_service';
-    const templateID = 'template_2wmo61o';
-
-    // إرسال البيانات عبر emailjs
-    emailjs.sendForm(serviceID, templateID, this)
-      .then(() => {
-        btn.textContent = 'Send Message';
-        loadingMessage.style.display = 'none';  // إخفاء الـ "loading"
-        responseMessage.style.display = 'block';  // إظهار رسالة النجاح
-        successIcon.style.display = 'block';  // إظهار علامة الصح
-        errorMessage.style.display = 'none';  // إخفاء رسالة الخطأ
-      }, (err) => {
-        btn.textContent = 'Send Message';
-        loadingMessage.style.display = 'none';  // إخفاء الـ "loading"
-        responseMessage.style.display = 'none';  // إخفاء رسالة النجاح
-        errorMessage.style.display = 'block';  // إظهار رسالة الخطأ
-        successIcon.style.display = 'none';  // إخفاء علامة الصح
-      });
-  });
-</script>
     <!--! ======= backend Contact ===================================================================== -->
 
 

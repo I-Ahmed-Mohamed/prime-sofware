@@ -7,6 +7,31 @@
 */
 
 
+const btn = document.getElementById('button');
+const responseMessage = document.getElementById('response-message');
+const errorMessage = document.getElementById('error-message');
+
+document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    btn.textContent = 'Sending...';
+
+    const serviceID = 'default_service';
+    const templateID = 'template_2wmo61o';
+
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            btn.textContent = 'Send Email';
+            responseMessage.style.display = 'block';
+            errorMessage.style.display = 'none';
+        }, (err) => {
+            btn.textContent = 'Send Email';
+            responseMessage.style.display = 'none';
+            errorMessage.style.display = 'block';
+        });
+});
+
+
 
 
 (function() {
