@@ -24,6 +24,21 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.icon {
+  width: 50px; /* حجم الأيقونة */
+  height: 50px;
+  border-radius: 50%; /* يجعل الصورة دائرية */
+  overflow: hidden;
+  display: inline-block;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* لضمان تغطية الصورة بالكامل */
+}
+
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
