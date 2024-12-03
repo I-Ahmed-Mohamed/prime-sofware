@@ -7,29 +7,52 @@
 */
 
 
+
+
+
+
+
 const btn = document.getElementById('button');
 const responseMessage = document.getElementById('response-message');
 const errorMessage = document.getElementById('error-message');
 
-document.getElementById('form').addEventListener('submit', function(event) {
-    event.preventDefault();
+document.getElementById('form').addEventListener('submit', function (event) {
+    event.preventDefault(); // منع إعادة تحميل الصفحة
 
-    btn.textContent = 'Sending...';
+    // تفعيل حالة التحميل
+    btn.innerHTML = 'Sending... <span class="spinner"></span>';
+    btn.disabled = true;
 
     const serviceID = 'default_service';
     const templateID = 'template_2wmo61o';
 
     emailjs.sendForm(serviceID, templateID, this)
         .then(() => {
-            btn.textContent = 'Send Email';
+            // عند النجاح
+            btn.innerHTML = 'Sent ✅';
+            btn.disabled = false;
             responseMessage.style.display = 'block';
             errorMessage.style.display = 'none';
-        }, (err) => {
-            btn.textContent = 'Send Email';
+
+            // إعادة تعيين النموذج
+            this.reset();
+
+            // إعادة الزر لحالته الأصلية بعد 3 ثوانٍ
+            setTimeout(() => {
+                btn.innerHTML = 'Send Email';
+            }, 3000);
+        })
+        .catch((err) => {
+            // عند الفشل
+            btn.innerHTML = 'Send Email';
+            btn.disabled = false;
             responseMessage.style.display = 'none';
             errorMessage.style.display = 'block';
+
+            console.error('Failed to send email:', err);
         });
 });
+
 
 
 
