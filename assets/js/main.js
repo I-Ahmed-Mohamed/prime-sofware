@@ -56,17 +56,17 @@ document.getElementById('form').addEventListener('submit', function (event) {
 
             // إعادة الزر لحالته الأصلية بعد 3 ثوانٍ
             setTimeout(() => {
-                btn.innerHTML = 'Send Email';
+                btn.innerHTML = 'Send Message';
             }, 3000);
         })
         .catch((err) => {
             // عند الفشل
-            btn.innerHTML = 'Send Email';
+            btn.innerHTML = 'Send Message';
             btn.disabled = false;
             responseMessage.style.display = 'none';
             errorMessage.style.display = 'block';
 
-            console.error('Failed to send email:', err);
+            console.error('Failed to send Message:', err);
         });
 });
 
