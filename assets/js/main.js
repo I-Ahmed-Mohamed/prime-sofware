@@ -1,11 +1,28 @@
-/**
-* Template Name: iPortfolio
-* Updated: Nov 17 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
+
+
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+});
+
+
+document.addEventListener("keydown", function (e) {
+    // F12
+    if (e.key === "F12") {
+        e.preventDefault();
+    }
+    // Ctrl+Shift+I
+    if (e.ctrlKey && e.shiftKey && e.key === "I") {
+        e.preventDefault();
+    }
+    // Ctrl+U (View Page Source)
+    if (e.ctrlKey && e.key === "u") {
+        e.preventDefault();
+    }
+});
+
+
+// no inspct no kydown //
 
 
 
