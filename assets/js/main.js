@@ -1,5 +1,68 @@
 
 
+// إضافة أو إزالة الوضع الداكن
+function toggleDarkMode() {
+    const darkModeStyles = `
+        body {
+            background-color: black !important;
+            color: white !important;
+            transition: background-color 0.3s, color 0.3s;
+        }
+    `;
+    
+    // التحقق من وجود النمط الخاص بالوضع الداكن
+    let darkModeStyleTag = document.getElementById('dark-mode-style');
+    if (darkModeStyleTag) {
+        // إذا كان موجودًا، إزالته (إيقاف الوضع الداكن)
+        darkModeStyleTag.remove();
+    } else {
+        // إذا لم يكن موجودًا، إضافته (تشغيل الوضع الداكن)
+        darkModeStyleTag = document.createElement('style');
+        darkModeStyleTag.id = 'dark-mode-style';
+        darkModeStyleTag.innerHTML = darkModeStyles;
+        document.head.appendChild(darkModeStyleTag);
+    }
+}
+
+// إنشاء زر لتبديل الوضع
+const toggleButton = document.createElement('button');
+toggleButton.textContent = 'Toggle Dark Mode';
+toggleButton.style.position = 'fixed';
+toggleButton.style.top = '20px';
+toggleButton.style.right = '20px';
+toggleButton.style.backgroundColor = '#007BFF';
+toggleButton.style.color = 'white';
+toggleButton.style.border = 'none';
+toggleButton.style.padding = '10px 20px';
+toggleButton.style.cursor = 'pointer';
+toggleButton.style.borderRadius = '5px';
+toggleButton.style.zIndex = '1000';
+toggleButton.onclick = toggleDarkMode;
+
+// إضافة الزر إلى الصفحة
+document.body.appendChild(toggleButton);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // document.addEventListener("contextmenu", function (e) {
 //     e.preventDefault();
