@@ -1,27 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // document.addEventListener("contextmenu", function (e) {
 //     e.preventDefault();
 // });
@@ -48,7 +25,21 @@
 
 
 
+// =======================CV===========================>
+const cvPath = "assets/Ahmed Mohamed CV.pdf";
 
+function downloadCV() {
+    const link = document.createElement("a");
+    link.href = cvPath;
+    link.download = "assets/Ahmed Mohamed CV.pdf";
+    link.click();
+}
+
+function viewCV() {
+    window.open(cvPath, "_blank");
+}
+
+// ===================cv=============================>
 
 const btn = document.getElementById('button');
 const responseMessage = document.getElementById('response-message');
