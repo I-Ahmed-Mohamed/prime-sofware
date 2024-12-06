@@ -23,24 +23,6 @@
 // no inspct no kydown //
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // =======================CV===========================>
   const cvPath = "assets/img/Ahmed Mohamed CV.pdf";
 const certificatesFilePath = "assets/img/certificatesPath.pdf"; // عدّلت اسم المتغير لتجنب التعارض
@@ -62,6 +44,7 @@ function viewCertificates() { // عدّلت اسم الدالة
 
 
 // ===================cv=============================>
+  
 
 const btn = document.getElementById('button');
 const responseMessage = document.getElementById('response-message');
