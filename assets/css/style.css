@@ -256,7 +256,6 @@ h6 {
 
 #hero .hero-container {
   position: relative;
-  z-index: 99999;
   min-width: 300px;
 }
 
@@ -545,6 +544,12 @@ button {
   background-color: #149ddd;
   color: #fff;
   text-align: center;
+}
+.Cer-btn{
+  background-color: #e72806;
+  color: #fff;
+  text-align: center;
+
 }
 .cent{
 text-align: center;

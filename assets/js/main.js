@@ -42,18 +42,24 @@
 
 
 // =======================CV===========================>
-const cvPath = "assets/Ahmed Mohamed CV.pdf";
+  const cvPath = "assets/img/Ahmed Mohamed CV.pdf";
+const certificatesFilePath = "assets/img/certificatesPath.pdf"; // عدّلت اسم المتغير لتجنب التعارض
 
 function downloadCV() {
     const link = document.createElement("a");
     link.href = cvPath;
-    link.download = "assets/Ahmed Mohamed CV.pdf";
+    link.download = "assets/img/Ahmed Mohamed CV.pdf"; // اسم الملف عند الحفظ
     link.click();
 }
 
 function viewCV() {
     window.open(cvPath, "_blank");
 }
+
+function viewCertificates() { // عدّلت اسم الدالة
+    window.open(certificatesFilePath, "_blank");
+}
+
 
 // ===================cv=============================>
 
