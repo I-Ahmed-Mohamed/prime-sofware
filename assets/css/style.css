@@ -386,57 +386,6 @@ section {
 
 }
 
-/*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
-.facts {
-  padding-bottom: 30px;
-}
-
-.facts .count-box {
-  padding: 30px;
-  width: 100%;
-}
-
-.facts .count-box i {
-  display: block;
-  font-size: 44px;
-  color: #149ddd;
-  float: left;
-  line-height: 0;
-}
-
-.facts .count-box span {
-  font-size: 40px;
-  line-height: 40px;
-  display: block;
-  font-weight: 700;
-  color: #050d18;
-  margin-left: 60px;
-}
-
-.facts .count-box p {
-  padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #122f57;
-}
-
-.facts .count-box a {
-  font-weight: 600;
-  display: block;
-  margin-top: 20px;
-  color: #122f57;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  transition: ease-in-out 0.3s;
-}
-
-.facts .count-box a:hover {
-  color: #1f5297;
-}
-
 
 /* Skills  --------------------------------------------------->
 
@@ -540,16 +489,22 @@ button {
   background-color: #4CAF50;
   color: #fff;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(11, 236, 97, 0.781);
+
 }
 .view-btn {
   background-color: #149ddd;
   color: #fff;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(11, 183, 236, 0.781);
+
 }
 .certificates-btn{
   background-color: #f1b50d;
   color: #fff;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(236, 183, 11, 0.781);
+
 
 }
 .cent{
