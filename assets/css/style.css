@@ -559,7 +559,7 @@ text-align: center;
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+ .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
 
@@ -572,6 +572,7 @@ text-align: center;
   border-radius: 50px;
   padding: 2px 15px;
 }
+
 
 .portfolio #portfolio-flters li {
   cursor: pointer;
@@ -586,35 +587,72 @@ text-align: center;
   transition: all 0.3s ease-in-out;
 }
 
+
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #149ddd;
 }
 
+
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
 
-.portfolio .portfolio-wrap {
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
+
+
+.portfolio-wrap {
+  background: #1c1c28; /* خلفية داكنة */
+  color: #ffffff; /* نص أبيض */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.portfolio .portfolio-wrap::before {
-  content: "";
-  background: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
+.portfolio-wrap:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
+.tech-stack i {
+  font-size: 20px;
+  color: #e5ebee; 
+  margin-right: 10px;
+}
+
+.project-image {
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.portfolio-links a {
+  margin: 50px;
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.1s ease;
+}
+
+.portfolio-links a:hover {
+  color: #149ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .portfolio .portfolio-wrap .portfolio-links {
   opacity: 1;
   left: 0;
@@ -655,7 +693,7 @@ text-align: center;
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
   bottom: 0;
-}
+} */
 
 /*--------------------------------------------------------------
 # Portfolio Details
