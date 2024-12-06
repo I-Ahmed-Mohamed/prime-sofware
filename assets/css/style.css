@@ -601,18 +601,18 @@ text-align: center;
 
 
 .portfolio-wrap {
-  background: #1c1c28; /* خلفية داكنة */
+  background-color: #040b14;
   color: #ffffff; /* نص أبيض */
   border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(11, 183, 236, 0.781);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   
 }
 
 .portfolio-wrap:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  border: 2px solid #0fbcf9; 
 }
 
 .tech-stack i {
