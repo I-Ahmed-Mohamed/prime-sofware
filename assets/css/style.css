@@ -612,7 +612,7 @@ text-align: center;
 
 .portfolio-wrap:hover {
   transform: translateY(-4px);
-  border: 2px solid #0fbcf9; 
+  box-shadow: 0 4px 6px rgba(11, 183, 236, 0.781);
 }
 
 .tech-stack i {
