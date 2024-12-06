@@ -489,21 +489,22 @@ button {
   background-color: #4CAF50;
   color: #fff;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(11, 236, 97, 0.781);
+  /* box-shadow: 0 4px 6px rgba(11, 236, 97, 0.781); */
 
 }
 .view-btn {
   background-color: #149ddd;
   color: #fff;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(11, 183, 236, 0.781);
+  
+  /* box-shadow: 0 4px 6px rgba(11, 183, 236, 0.781); */
 
 }
 .certificates-btn{
   background-color: #f1b50d;
   color: #fff;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(236, 183, 11, 0.781);
+  /* box-shadow: 0 4px 6px rgba(236, 183, 11, 0.781); */
 
 
 }
