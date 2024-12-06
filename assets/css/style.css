@@ -535,6 +535,7 @@ button {
   text-align: center;
   
 }
+
 .download-btn {
   background-color: #4CAF50;
   color: #fff;
@@ -545,8 +546,8 @@ button {
   color: #fff;
   text-align: center;
 }
-.Cer-btn{
-  background-color: #e72806;
+.certificates-btn{
+  background-color: #f1b50d;
   color: #fff;
   text-align: center;
 
