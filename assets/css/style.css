@@ -607,6 +607,7 @@ text-align: center;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
 .portfolio-wrap:hover {
@@ -618,11 +619,13 @@ text-align: center;
   font-size: 20px;
   color: #e5ebee; 
   margin-right: 10px;
+  background-color: #040b14;
+  
 }
 
 .project-image {
-  border-radius: 10px;
-  margin-top: 15px;
+  border-radius: 30px;
+  margin-top: 20px;
 }
 
 .portfolio-links a {
@@ -630,6 +633,11 @@ text-align: center;
   color: #fff;
   font-size: 20px;
   transition: color 0.1s ease;
+  background-color: #040b14;
+  border-radius: 50px;
+
+
+
 }
 
 .portfolio-links a:hover {
